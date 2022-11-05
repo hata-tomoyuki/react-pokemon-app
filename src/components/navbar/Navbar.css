@@ -1,0 +1,14 @@
+nav {
+    background-color: rgb(135, 60, 60);
+    color: white;
+    height: 65px;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
