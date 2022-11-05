@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.pokemonCardContainer {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  place-items: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardName {
+  padding: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.cardInfo {
+  text-align: center;
+}

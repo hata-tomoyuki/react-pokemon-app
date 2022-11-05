@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Card.css';
 
 const Card = ({pokemon}) => {
   return (
@@ -8,7 +9,7 @@ const Card = ({pokemon}) => {
         </div>
         <h3 className='cardName'>{pokemon.name}</h3>
         <div className="cardTypes">
-            <div>Type</div>
+            <div className='title'>Type</div>
             {pokemon.types.map((type) => {
                 return (
                     <div>
@@ -19,13 +20,16 @@ const Card = ({pokemon}) => {
         </div>
         <div className="cardInfo">
             <div className="cardData">
-                <p className='title'>Weight: {pokemon.weight}</p>
+                <span className='title'>Weight: </span>
+                <span>{pokemon.weight}</span>
             </div>
             <div className="cardData">
-                <p className='title'>Height: {pokemon.height}</p>
+                <span className='title'>Height: </span>
+                <span>{pokemon.height}</span>
             </div>
             <div className="cardData">
-                <p className='title'>Ability: {pokemon.abilities[0].ability.name}</p>
+                <span className='title'>Ability: </span>
+                <span>{pokemon.abilities[0].ability.name}</span>
             </div>
         </div>
     </div>
